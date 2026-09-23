@@ -9,178 +9,284 @@
          <meta name="keywords" content="surfing, beach, smoothies, bikinis, shaved ice, drinks">
          <meta charset="UTF-8">
 
+         <!-- Custom Google Fonts -->
+         <link rel="stylesheet" href="style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+
+         <!-- IMAGES -->
         <style>
+
+            .CSSBeach1 {
+            display: block;
+            width: 1475px;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
             .surfshop2-image {
             display: block;
             width: 1475px;
             margin-left: auto;
             margin-right: auto;
-                        }
+            }
 
              .photo-row {
              display: flex;
              justify-content: center;
              gap: 5px;
-                    }
+            }
 
             .photo-row img {
              width: 500px;
              height: auto;
-                        }
+            }
 
         </style>
   
     </head>
+    <!-- End of Head section -->
 
 
 
 
+    <!-- Start of Body Section -->
     <body>
 
         <header>
-            <h1>Sunny Side Surf Shop🌴</h1>
-            <nav>
+
+        <!-- Bogo Ice Drinks Promo -->
+         <div class="promo">
+            <strong>BOGO Iced Drinks For Limited Time!</strong>
+         </div>
+
+         <!-- Top Navigation Header -->
+          <nav>
+            <h1>Sunny Side Surf</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#meetMaya">Meet Maya</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#bikinis'&gear">Bikinis' & Gear</a></li>
-                <li><a href="#customerreviews">Customer Reviews</a></li>
-                <li><a href="#hours">Hours</a></li>
-                <li><a href="#contact">Contact</a></li>
+                 <li><a href="#home" class="home">Home</a></li>
+                 <li><a href="#menu" class="menu">Menu</a></li>
+                 <li><a href="#bikinis-gear" class="gear">Bikinis' & Gear</a></li>
+                 <li><a href="#customerreviews" class="reviews">Customer Reviews</a></li>
+                 <li><a href="#hours" class="hours">Hours</a></li>
+                <li><a href="#contact" class="contact-link">Contact</a></li>
             </ul>
         </nav>
+
         </header>
 
+        <!-- Top Beach Picture -->
+        <img class="CSSBeach1" src="CSSBeachPic1.png" alt="Top Beach Pic 1">
+        
+
+        <!--MENU SECTION -->
+        <section class="menu-pics">
+             <div class="menu-header">
+                <h2>EXPLORE MENU ITEMS</h2>
+             </div>
+
+               <div class="menu-grid">
+
+                <!--Smoothies-->
+                <a href="smoothies.html" class="menu-card">
+                    <img src="smoothies.png" alt="Smoothies">
+                    <div class="menu-title">SMOOTHIES</div>
+                </a>
+
+                <!--Shaved Ice-->
+                 <a href="shavedIce.html" class="menu-card">
+                    <img src="shavedIce.png" alt="Shaved Ice">
+                    <div class="menu-title">SHAVED ICE</div>
+                 </a>
+
+                <!--Iced Refreshers-->
+                <a href="icedRefreshers.html" class="menu-card">
+                    <img src="iceRefreshers.png" alt="Iced Drinks">
+                    <div class="menu-title">ICED REFRESHERS</div>
+                </a>
+
+                <!--Acai Bowls-->
+                    <a href="acaiBowls.html" class="menu-card">
+                    <img src="acaiBowls.png" alt="Acai">
+                    <div class="menu-title">ACAI BOWLS</div>
+                </a>
+
+               </div>
+
+        </section>
+
+        <!-- END OF MENU SECTION-->
 
 
 
-          <main>
-                <section>
+        <!-- BIKINIS & GEAR SECTION -->
+          <section class="bikinisNgear">
+            <div class="bikinis-header">
+                <h2>SWIM IN STYLE</h2>
+            </div>
 
-                    <section id="home">
-                        <h2>Home</h2>
-                        <p>Good bikinis'. Brighter days 🌺 Welcome to Sunny Side Surf Shop — your happy little spot by the beach for 
-                            cute swimwear, refreshing smoothies, colorful shaved ice, and all things sunny!!</p>
-                    </section>
+              <div class="bikinis-grid">
+                 <!--Bikini Tops-->
+                <a href="bikiniTops.html" class="bikini-card">
+                    <img src="bikiniTops.png" alt="bikini tops">
+                    <div class="bikini-title">BIKINI TOPS</div>
+                </a>
 
+                 <!--Bikini Bottoms-->
+                <a href="bikiniBottoms.html" class="bikini-card">
+                    <img src="bikiniBottoms.png" alt="bikini bottoms">
+                    <div class="bikini-title">BIKINI BOTTOMS</div>
+                </a>
 
+                 <!--Surfboards-->
+                <a href="surfboards.html" class="bikini-card">
+                    <img src="surfboards.png" alt="surfboards">
+                    <div class="bikini-title">SURFBOARDS</div>
+                </a>
 
-                    <section id="meetMaya">
-                        <h2>Meet Maya</h2>
-                        <p>Hey, I'm Maya :) I'm a surfer, beach lover, and the owner of Sunny Side Surf Shop. I created this shop to 
-                            bring together everything I love about beach life — surfing, swimwear, tropical drinks, and good vibes☀️</p>
-                    </section>
+                 <!--Bracelets-->
+                <a href="bracelets.html" class="bikini-card">
+                    <img src="bracelets.png" alt="bracelets">
+                    <div class="bikini-title">BRACELETS</div>
+                </a>
 
+              </div>
 
-                    <section id="menu">
-                        <h2>🥥Menu🥥</h2>
-
-                        <p><em>Smoothies</em></p>
-                        <ul> 
-                            <li>Mango Magic — Mango, pineapple & orange — $8</li>
-                            <li>Berry Bliss — Strawberry, blueberry & banana — $8</li>
-                            <li>Tropical Dream — Pineapple, coconut & banana — $8</li>
-                            <li>Sunrise — Strawberry, mango & pineapple — $8</li>
-                            <li>Green Wave — Spinach, banana, mango & pineapple — $8</li>
-                    
-                        </ul>
-
-                        <p><em>Shaved Ice</em></p>
-                        <ul>
-                            <li>Ocean Breeze — Blue raspberry & coconut — $6</li>
-                            <li>Tropical Sunset — Strawberry, mango & orange — $6</li>
-                            <li>Rainbow Wave — Strawberry, blue raspberry & pineapple — $6</li>
-                            <li>Pineapple Paradise — Pineapple & coconut — $6</li>
-                        </ul>
-
-                       <p><em>Iced Drinks</em></p>
-                        <ul>
-                            <li>Tropical Lemonade — $5</li>
-                            <li>Fresh Coconut Water — $5</li>
-                            <li>Hibiscus Tea — $5</li>
-                            <li>Pineapple Juice — $5</li>
-                        </ul>
-
-
-                    </section>
+          </section>
+          <!-- END OF BIKINI & GEAR SECTION -->
 
 
 
-                    <section id="bikinis'&gear">
-                        <h2>Bikini's & Gear</h2>
-                        <ul>
-                            <li>Colorful Bikinis</li>
-                            <li>Beach Towels</li>
-                            <li>Sunglasses</li>
-                            <li>Beach Totes</li>
-                            <li>Ocean Glass Jewlery</li>
-                        </ul>
-                    </section>
+        <!-- HOME SECTION-->
+         <section class="home-section">
+        <div class="yellow-box">
+            <h2>Good Bikinis, <br>
+            Brighter Days 🌺</h2>
+            <p>
+                A happy little spot by the beach
+                for cute swimwear, refreshing smoothies, colorful shaved ice, and all
+                things sunny!
+            </p>
+
+            <a href="shop.html" class="shop-button">SHOP NOW</a> <!-- add button -->
+
+        </div>
+
+         <div class="home-image">
+            <img src="friendshipbracelets.png" alt="Sunny Side Surf Shop">
+        </div>
+
+        </section>
+
+        <!--END OF HOME SECTION-->
 
 
 
-                    <section id="customerreviews">
-                    <h2>Customer Reviews</h2>
-                    <p> Reviews from our lovely customers:</p>
-                    <p> ★★★★★ — Emma "Such a cute beach shop! The mango smoothie was AMAZING, 
-                        and I found the cutest bikini. I’ll definitely be back!”</p>
-                    <p> ★★★★★ — Jake “Best shaved ice on the beach! The colors, music, and surf vibe 
-                        make this place so fun.</p>
-                    <p> ★★★★★ — Sofia "I came in for a drink and ended up staying for an hour! Everything is 
-                        so colorful and welcoming. The Tropical Dream smoothie is my new favorite!”</p>
-                    <p> ★★★★★ — Kayla "Sunny Side is the perfect place to stop after surfing. 
-                        Great drinks, awesome bikinis, and the friendliest owner!”</p>
-                    <p> ★★★★★ — Lily “10/10 beach vibes! The Ocean Breeze shaved ice was so good, 
-                        and the shop is absolutely adorable.”</p>
+        <!-- INFO SECTION (contact, hours, meet owner) -->
+         <section class="info-section">
 
-                    </section>
+            <!-- store hours -->
+         <div class="info-card">
+            <img src="surfshop.png" alt="surf shop pic">
+            <h2>STORE HOURS</h2>
+            <p>
+                Monday – Saturday: 10 AM – 7 PM <br>
+                Sunday: 11 AM – 5 PM <br>
+                <em>*Hours may change for holidays and special beach events*</em>
+            </p>
+        </div>
 
+            <!-- meet owner -->
+              <div class="info-card">
+                 <img src="owners.png" alt="owner pic">
+                  <h2>MEET THE OWNERS</h2>
+                  <p> 
+                    Meet the girls behind Sunny Side Surf Shop! Our shop was created to bring a little more sunshine,
+                    creativity, and beach life to California! 
+                  </p>
+              </div>
 
+              <!-- contact info -->
+               <div class="info-card">
+                <img src="surfshop2.png" alt="aestchic pic">
+                <h2>CONTACT US</h2>
+                <p>Find Sunny Side Surf Shop @ <br>
+                    123 Ocean Avenue Santa Monica, CA 90401 <br>
+                    (305) 555-1234<br>
+                    sunnysidesurf@gmail.com
+                </p>
+               </div>
 
-                    <section id="hours">
-                        <h2>Hours</h2>
-                        <p> Sunny Side Surf Shop Hours</p>
-                        <ul> 
-                            <li> Monday 9:00 AM – 7:00 PM</li>
-                            <li> Tuesday 9:00 AM – 7:00 PM</li>
-                            <li> Wednesday 9:00 AM – 7:00 PM</li>
-                            <li> Thursday 9:00 AM – 7:00 PM</li>
-                            <li> Friday 9:00 AM – 10:00 PM</li>
-                            <li> Saturday 9:00 AM – 10:00 PM</li>
-                            <li> Sunday 9:00 AM – 3:00 PM</li>
-                        </ul>
-                        <p><b>Open 7 days a week!</b></p>
-                        <p><em>Hours may change for holidays and special beach events</em></p>
-                    </section>
-
-
-                    <section id="contact">
-                        <h2>Contact🏄‍♀️</h2>
-                        <p>Find Sunny Side Surf Shop @ 123 Ocean Breeze Avenue Santa Monica, CA 90401 </p>
-                        <p> Reach us @ 123-456-SURF</p>
+         </section>
+          <!-- END OF INFO SECTION (contact, hours, meet owner) -->
 
 
-                        <img class="surfshop2-image" src="SunnySideSurfShop2.png" alt="Sunny Side Surf Shop2">
+          <!-- CUSTOMER REVIEWS -->
+         <section class="reviews-section">
 
+            <!-- heading -->
+            <div class="reviews-heading">
+                <div class="top-stars">★★★★★</div>
+                <h2>What Our Customers Have To Say</h2>
+            </div>
 
-                        <div class="photo-row">
-                        <img src="SunnySIdeSurfShop3.png" alt="Sunny Side Surf Shop 3">
-                        <img src="SunnySideSurfShop1.png" alt="Sunny Side Surf Shop 1">
-                        <img src="SunnySIdeSurfShop4.png" alt="Sunny Side Surf Shop 4">
-                        </div>
+            <div class="reviews-grid">
+                </div>
 
-            
-                    </section>
+            <!-- review 1 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> Such a cute beach shop! The mango smoothie was AMAZING, 
+                     and I found the cutest bikini. I’ll definitely be back!
+                 </p>
 
+                 <div class="review-bottom">
+                 <strong>Emma L.</strong>
+             </div>
+            </div>
 
-        <footer>
-            <p>☀️Surf. Sip. Chill. Repeat☀️</p>
-        </footer>
+             <!-- review 2 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> Sunny Side is the perfect place to stop after surfing. 
+                    Great drinks, awesome bikinis, and the friendliest owners!
+                 </p>
 
+                 <div class="review-bottom">
+                 <strong>Kayla P.</strong>
+             </div>
+             </div>
+
+              <!-- review 3 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> 10/10 beach vibes! The Ocean Breeze shaved ice was so good, and the shop 
+                    is absolutely adorable.
+                 </p>
+
+                 <div class="review-bottom">
+                 <strong>Lily W.</strong>
+             </div>
+
+            </div>
+
+        </section>
 
     </body>
 
+        <!--END OF CUSTOMER REVIEWS-->
 
 
 </html> <!-- End of Sunny Side Surf Shop Code -->

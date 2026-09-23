@@ -1,4 +1,434 @@
-body{
-    background-color: aqua;
+header{
+    
+    box-sizing: border-box;
+    body{
+        margin: 0;
+    }
+   
+    /* Keep Top Navigation Bar at top of screen always */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
+    /* Custom Font for Title */
+    h1 {
+    font-family: "Michroma", sans-serif;
+    }
+
+    /* Custom Font for Navigation Text */
+    nav a {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    }
+
+
+    /* Promo Top Box */
+    .promo {
+    width: 100%;
+    background-color: #EFE8DC;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    }
+
+    /* Promo Text */
+    .promo a {
+        color: black;
+    }
+
+    /* Main Title & Navigation Bar */
+    nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    }
+
+    /* Sunny Side Surf Shop Text */
+    nav h1 {
+        margin: 0;
+        margin-right: 30px;
+        font-size: 25px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+    }
+
+    /* Navigation List */
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation Text */
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* Link hover effect */
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Link hover effect different colors */
+    .home:hover {
+    text-decoration: underline;
+    text-decoration-color: #C8CE72;
+    }
+
+    .menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #479977;
+    }
+
+    .gear:hover {
+    text-decoration: underline;
+    text-decoration-color: #BDD8F1;
+    }
+
+    .reviews:hover {
+    text-decoration: underline;
+    text-decoration-color: #EFD780;
+    }
+
+    .hours:hover {
+    text-decoration: underline;
+    text-decoration-color: #CB6CE6;
+    }
+
+    .contact {
+    color: #38B6FF;
+    }   
+
+    /* Navigation Make Contact Blue */
+    .contact-link {
+        color: #38B6FF;
+    }
+
+    }
+
+    /* MENU SECTION */
+    .menu-pics {
+    padding: 50px 30px;
+    background-color: white;
+    }
+
+    .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+
+    .menu-header h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    }
+
+    .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    }
+
+    .menu-card {
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #F5F0DC;
+    text-decoration: none;
+    color: inherit;
+    }
+
+    .menu-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    }
+
+    .menu-title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #292929;
+    }
+
+    .menu-card:hover {
+    background-color: white;
+    }
+
+    /* END OF MENU SECTION */
+
+
+    /* BIKINI & GEAR SECTION */
+     .bikinisNgear {
+    padding: 50px 30px;
+    background-color: white;
+    }
+
+     .bikinis-header h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30;
+    }
+
+    .bikini-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    }
+
+    .bikini-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease, transform 0.2s ease; /*makes transistion smoother*/
+    }
+
+    .bikini-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    }
+
+    .bikini-title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #292929;
+    }
+
+    .bikini-card:hover {
+    transform: translateY(-5px); /* Changes pos of image */
+    }
+
+     /* END OF BIKINI & GEAR SECTION */
+
+
+
+
+    /* HOME SECTION */
+    .home-section {
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+
+    .yellow-box {
+        background-color: #B4EFE6;
+        color: #026169;
+        padding: 100px 70px;
+        width: 50%;
+        height: 500px;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", sans-serif;
+    }
+
+    .yellow-box h2 {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.05;
+        margin: 0 0 35px 0;
+
+    }
+
+    .yellow-box p {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 0 15px 0;
+    }
+
+    .home-image {
+    width: 50%;
+    height: 500px;
+    }
+
+    .home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    .shop-button {
+    display: inline-block;
+    background-color: #006B73;
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    transition: background-color 0.3s ease;
+    }
+
+    .shop-button:hover {
+    background-color: white;
+    color: #006B73;
+    }
+
+    /* END OF HOME SECTION */
+
+
+    /* INFO SECTION */
+    .info-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        padding: 60px 30px;
+        background-color: white;
+    }
+
+    .info-card {
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    }
+
+    .info-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    }
+
+    .info-card h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 25px 0 12px;
+    color: #292929;
+    }
+
+    .info-card p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 500px;
+    color: #292929;
+    }
+
+    /* END OF INFO SECTION */
+
+
+    /* CUSTOMER REVIEWS SECTION */
+    .reviews-section {
+        background-color: #FB97FF ;
+        padding: 70px 40px;
+    }
+
+    .reviews-heading {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .top-stars {
+        color: #006B73;
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin-bottom: 15px;
+    }
+
+    .reviews-heading h2 {
+    font-family: "Nunito Sans", sans-serif;
+    color: #006B73;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    }
+
+    .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    width: 100%;
+    }
+
+    .review-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 290px;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    }
+
+    .review-stars {
+    color: #F080F0;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    }
+
+    .review-card p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #292929;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    }
+
+    .review-bottom {
+    margin-top: auto;
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .review-bottom strong {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    color: #292929;
+    }
+    
+    /* END OF CUSTOMER REVIEWS SECTION */
+
+
+body{
+    background-color: white;
 }
+
+/* END OF STLYE.CSS CODE :) */
