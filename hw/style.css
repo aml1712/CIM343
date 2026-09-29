@@ -1,14 +1,14 @@
-header{
-    
-    box-sizing: border-box;
     body{
         margin: 0;
+        background-color: white;
     }
    
     /* Keep Top Navigation Bar at top of screen always */
+    header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    }
 
     /* Custom Font for Title */
     h1 {
@@ -110,7 +110,7 @@ header{
         color: #38B6FF;
     }
 
-    }
+    
 
     /* MENU SECTION */
     .menu-pics {
@@ -435,17 +435,138 @@ header{
     width: 100%;
     }
 
-
-
-
-
-
-    
     /* END OF CUSTOMER REVIEWS SECTION */
 
 
-body{
-    background-color: white;
-}
+    /* FITS MOBILE PHONE SCREEN */
+
+    @media (max-width: 768px) {
+        
+        /* Header */
+        nav {
+            flex-direction: column;
+            padding: 15px;
+        }
+
+         nav h1 {
+            font-size: 20px;
+            margin-right: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 18px;
+        }
+
+        nav a {
+            font-size: 14px;
+        }
+
+        /* Menu */
+        .menu-pics {
+            padding: 35px 15px;
+        }
+
+        .menu-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .menu-card img {
+            height: 180px;
+        }
+
+        .menu-title {
+            font-size: 14px;
+        }
+
+        /* Bikinis n Gear */
+        .bikinisNgear {
+            padding: 35px 15px;
+        }
+
+         .bikini-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .bikini-card img {
+            height: 180px;
+        }
+
+        .bikini-title {
+            font-size: 14px;
+        }
+
+        /* Home */
+        .home-section {
+            flex-direction: column;
+            height: auto;
+        }
+
+        .yellow-box {
+            width: 100%;
+            height: auto;
+            padding: 50px 25px;
+            text-align: center;
+        }
+
+        .yellow-box h2 {
+         font-size: 32px;
+        }
+
+        .yellow-box p {
+            font-size: 17px;
+        }   
+
+        .home-image {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Info Section */
+        .info-section {
+            grid-template-columns: 1fr;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .info-card img {
+            height: 250px;
+        }
+
+        .info-card p {
+            font-size: 17px;
+        }
+
+        /* Revies */
+         .reviews-section {
+            padding: 50px 20px;
+        }
+
+        .reviews-heading h2 {
+            font-size: 30px;
+        }
+
+        .reviews-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .review-card {
+            width: 100%;
+            min-height: 0;
+            padding: 25px;
+        }
+
+        .review-card p {
+            font-size: 17px;
+        }
+
+    } /* end of mobile screen layout media */
+
 
 /* END OF STLYE.CSS CODE :) */
