@@ -3,6 +3,15 @@ let redClickBox = document.getElementById("redClick");
 
 redClickBox.classList.add("clickBox");
 
+redClickBox.addEventListener("click", function(){
+    //actions go here
+    
+});
+
+
+
+
+
 redClickBox.addEventListener("click", function() {
     document.querySelector("body").style.backgroundColor = "blue";
 });
