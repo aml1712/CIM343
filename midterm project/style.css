@@ -1,0 +1,94 @@
+    body{
+        margin: 0;
+        background-color: #292828;
+    }
+
+
+    /* Keep Top Navigation Bar at top of screen always */
+    header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+
+    /* Custom Font for Title */
+    h1 {
+    font-family: "Michroma", sans-serif;
+    }
+
+    /* Custom Font for Navigation Text */
+    nav a {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    }
+
+     /* Promo Top Box */
+    .promo {
+    width: 100%;
+    background-color: #EFE8DC;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    }
+
+    /* Promo Text */
+    .promo a {
+        color: black;
+    }
+
+    /* Main Title & Navigation Bar */
+    nav {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    }
+
+     /* Sunny Side Surf Shop Text */
+    nav h1 {
+        margin: 0;
+        margin-right: 30px;
+        font-size: 25px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+    }
+
+    /* Navigation List */
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation Text */
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* Link hover effect */
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
