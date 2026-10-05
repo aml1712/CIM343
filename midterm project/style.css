@@ -1,16 +1,8 @@
-    body{
+body{
         margin: 0;
-        background-color: #292828;
+        background-color: white;
     }
-
-    .website {
-         border: 2px solid #CDA8E2;
-         border-radius: 15px;
-         background-color: #202020;
-         overflow: hidden;
-    }
-
-
+   
     /* Keep Top Navigation Bar at top of screen always */
     header {
     position: sticky;
@@ -18,43 +10,102 @@
     z-index: 1000;
     }
 
-    .navigationBar {
-    padding: 50px 35px 25px;
+    /* Custom Font for Title */
+    h1 {
+    font-family: "Michroma", sans-serif;
     }
 
-    .browser-Crcles {
+    /* Custom Font for Navigation Text */
+    nav a {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    }
+
+
+    /* Promo Top Box */
+    .promo {
+    width: 100%;
+    background-color: #EFE8DC;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    }
+
+    /* Promo Text */
+    .promo a {
+        color: black;
+    }
+
+    /* Main Title & Navigation Bar */
+    nav {
+    width: 100%;
+    background-color: white;
     display: flex;
-    gap: 12px;
-
-    margin-bottom: 55px;
+    align-items: center;
+    padding: 20px 30px;
     }
 
-    .browserCircles span {
-    width: 18px;
-    height: 18px;
-
-    border: 2px solid #d5d64a;
-    border-radius: 50%;
-
-    display: block;
+    /* Sunny Side Surf Shop Text */
+    nav h1 {
+        margin: 0;
+        margin-right: 30px;
+        font-size: 25px;
+        letter-spacing: 4px;
+        white-space: nowrap;
     }
 
+    /* Navigation List */
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
 
-   
+     /* Navigation Text */
+    nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
 
+    /* Link hover effect */
+    nav a:hover {
+        text-decoration: underline;
+    }
 
+    /* Link hover effect different colors */
+    .home:hover {
+    text-decoration: underline;
+    text-decoration-color: #C8CE72;
+    }
 
-   
+    .menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #479977;
+    }
 
+    .gear:hover {
+    text-decoration: underline;
+    text-decoration-color: #BDD8F1;
+    }
 
+    .reviews:hover {
+    text-decoration: underline;
+    text-decoration-color: #EFD780;
+    }
 
+    .hours:hover {
+    text-decoration: underline;
+    text-decoration-color: #CB6CE6;
+    }
 
+    .contact {
+    color: #38B6FF;
+    }   
 
-
-
-
-
-
-
-
-
+    /* Navigation Make Contact Blue */
+    .contact-link {
+        color: #38B6FF;
+    }
