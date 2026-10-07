@@ -1,8 +1,18 @@
-* {
-    box-sizing: border-box;
-  }   
-
-body{
-        margin: 0;
-        background-color: #292828;
+    .websiteBorder {
+        border: 2px solid #d6d632;
+        margin: 30px;
+        min-height: calc(100vh - 60px);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
