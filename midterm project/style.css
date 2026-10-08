@@ -1,8 +1,683 @@
+   /* keep everything in border */
+   * {
+        box-sizing: border-box;
+    }
+   
+   body{
+        margin: 0;
+        background-color: #292828;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+     /* border around whole site */
     .websiteBorder {
-        border: 2px solid #d6d632;
+        width: calc(100% - 60px);
+        border: 2px solid #FAF26F;
         margin: 30px;
         min-height: calc(100vh - 60px);
+        border-radius: 18px;
+        overflow: hidden;
+        box-sizing: border-box;
     }
+
+
+    /* HEADER SECTION */
+
+     /* Keep Top Navigation Bar at top of screen always */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #292828;
+    }
+
+    /* Afterglow Music Fest Title */
+    .title {
+        font-family: "Modak", cursive;
+        margin: 0;
+        margin-right: 30px;
+        font-size: 50px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        color:#FAF26F;
+        -webkit-text-stroke: 1px #FE7BBF;
+    }
+
+
+    /* Navigation Text */
+    .navigationLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .navigationLinks a{
+        font-family: "Lakki Reddy", cursive;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 22px;
+        color:#FAF26F;
+    }
+
+    /* Link hover effect */
+    nav a:hover {
+        text-decoration: underline;
+        text-decoration-color: #FE7BBF;
+    }
+
+     /* Promo Top Box */
+    .promo {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    color: #FAF26F;
+    }
+
+
+    /* Main Title & Navigation BAR */
+    nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px 30px;
+    }
+
+    /* END OF HEADER SECTION */
+
+
+    /* FESTIVAL INTRODUCTION SECTION */
+    .festivalSection {
+    width: 100%;
+    background-color: #292828;
+    padding: 60px 50px 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    }
+
+    .festivalText {
+    margin-left: 200px;
+    }
+
+    /* Vertical Cali Text */
+    .verticalText {
+    position: absolute;
+    left: 480px;
+    top: 200px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: "Limelight", cursive;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #D653A9;
+    }
+
+    /* 2027 text */
+    .festivalYear {
+    font-family: "Monoton", cursive;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1;
+    color: #C8CE72;
+    margin-bottom: 10px;
+    }
+
+    /* AfterGlow Text */
+    .festivalText h2 {
+    margin: 0;
+    font-family: "Modak", cursive;
+    font-size: 100px;
+    line-height: .9;
+
+    background: linear-gradient(
+        90deg,
+        #F7E53C,
+        #78D7E8,
+        #C8CE72,
+        #FE7BBF
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+    /* Music Text */
+    .festivalText h3 {
+    margin: 5px 0;
+    font-family: "Modak", cursive;
+    font-size: 100px;
+    line-height: .9;
+    background: linear-gradient(
+        90deg,
+        #FFB86C,
+        #F080F0,
+        #C8CE72
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+    /* Festival Text */
+    .festivalText h4 {
+    margin: 5px 0 0;
+    font-family: "Modak", cursive;
+    font-size: 100px;
+    line-height: .9;
+
+    background: linear-gradient(
+        90deg,
+        #F080F0,
+        #FFB86C,
+        #C8CE72,
+        #78D7E8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+    /* Bottom Info */
+    .festivalBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 40px;
+    }
+
+
+    /* San Diego & Date Text */
+    .festivalInfo p {
+    margin: 5px 0;
+    font-family: "Limelight", cursive;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #C8CE72;
+    }
+
+
+    /* Buy Tickets Button */
+    .ticketButton {
+    display: inline-block;
+    background-color: #F7E53C;
+    color: #3A1E66;
+    padding: 20px 55px;
+    border-radius: 8px;
+    font-family: "Limelight", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+    }
+
+/* Buy Tickets Hover Color Change */
+    .ticketButton:hover {
+        background-color: #CDA8E2;
+    }
+
+    /* END OF FESTIVAL INTRODUCTION SECTION */
+
+
+    /* NAVIGATION LINKS SECTION */
+
+    /* about us */
+    .about {
+        width: 100%;
+        background-color: #292828;
+        overflow: hidden;
+        padding: 30px 0;
+        border-top: 2px solid #CDA8E2;
+        border-bottom: 2px solid #CDA8E2;
+    }
+
+    .aboutScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: aboutScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .aboutUS,
+    .aboutUS2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #C8CE72;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes aboutScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.homeSection {
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+
+    .textBox {
+        background-color: transparent;
+        font-family: "Lakki Reddy", cursive;
+        padding: 50px 50px;
+        width: 50%;
+        height: 500px;
+        box-sizing: border-box;
+    }
+
+    .textBox h2 {
+        text-align: center;
+        font-family: "Modak", cursive;
+        background: linear-gradient(
+        90deg,
+        #F080F0,
+        #FFB86C,
+        #C8CE72,
+        #78D7E8
+        );
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 1.05;
+        margin: 0 0 15px 0;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #D653A9;
+    }
+
+    .textBox p {
+        text-align: center;
+        font-family: "Lakki Reddy", cursive;
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 0 15px 0;
+    }
+
+    .homeImage {
+    width: 50%;
+    height: 500px;
+    }
+
+    .homeImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+
+    /* Entertainment Section */
+
+    .entertainment {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: entertainment 15s linear infinite; /* make it scroll */
+    }
+    
+    .entertainmentScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: entertainmentScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .entertainMENT,
+    .entertainMENT2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #D653A9;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes entertainmentScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+    .entertainmentInfoText{
+        text-align: center;
+        font-family: "Modak", cursive;
+        background: linear-gradient(
+        90deg,
+        #F080F0,
+        #FFB86C,
+        #C8CE72,
+        #78D7E8
+        );
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.05;
+        margin: 0 0 15px 0;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #D653A9;
+    }
+
+
+
+    .entertainmentSection {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.activityText {
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activityText h2 {
+    font-family: "Lakki Reddy", cursive;
+    font-size: 47px;
+    color: #FAF26F;
+    margin: 0 0 0px;
+     line-height: 1;
+
+}
+
+.activityText p {
+    font-family: "Limelight", cursive;
+    font-size: 20px;
+    color: white;
+    margin: 0px 0;
+    text-align: center;
+     line-height: 1.4;
+}
+
+.activityImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.paint {
+    object-position: center bottom;
+}
+
+.rides {
+    object-position: center 30%;
+}
+
+.food {
+    object-position: center 80%;
+}
+
+.lounge {
+    object-position: center bottom;
+
+}
+
+/* end of ENTERTAINMENT SECTION */
+
+/* LINEUP SECTION */
+.lineupScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: lineupScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .lineUP,
+    .lineUP2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #ABE3D2;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes lineupScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.lineupPics {
+    padding: 50px 30px;
+    background-color: #292828;
+    }
+
+    .lineupGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    }
+
+    .lineupCard {
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #FAF26F;
+    text-decoration: none;
+    color: inherit;
+    }
+
+    .lineupCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    }
+
+    .lineupTitle {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Limelight", cursive;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3A1E66;
+    }
+
+    .lineupCard:hover {
+    background-color: #ABE3D2;
+    }
+
+    /* ARROWS */
+    .lineupArrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    }
+
+    .lineupArrows button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FAF26F;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #FAF26F;
+    font-size: 30px;
+    cursor: pointer;
+    }
+
+    .lineupArrows button:hover {
+    background-color: #FAF26F;
+    color: #292828;
+    }
+
+
+
+    /* END OF LINEUP SECTION */
+
+    /* Tickets */
+     .ticketsScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: ticketsScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .tickETS,
+    .tickETS2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #FAF26F;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes ticketsScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+    /* FAQ */
+     .faqScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: faqScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .FAQ,
+    .FAQ2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #CEFF32;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes faqScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+    /* Photo Gallery */
+     .galleryScroll {
+        margin-top: 20px;
+        display: flex;
+        width: max-content;
+        animation: galleryScroll 15s linear infinite; /* make it scroll */
+    }
+    
+    .gallerY,
+    .gallerY2 {
+        flex-shrink: 0;
+        font-family: 'Aladin', cursive;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: transparent;
+        -webkit-text-stroke: 2px #EA6E4B;
+        white-space: nowrap;
+        padding-right: 30px;
+    }
+
+    /* make it scroll code */
+    @keyframes galleryScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
 
 
 
