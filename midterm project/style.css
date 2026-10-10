@@ -551,9 +551,17 @@
     color: #292828;
     }
 
+    .latto {
+    object-position: center 20%;
+    }
+
+
+
+
 
 
     /* END OF LINEUP SECTION */
+
 
     /* Tickets */
      .ticketsScroll {
@@ -584,7 +592,114 @@
     to {
         transform: translateX(-50%);
     }
+    }
+
+
+    .passes {
+    background-color: #292828;
+    padding: 20px 8%;
 }
+
+.passes h1 {
+    text-align: center;
+     background: linear-gradient(
+        90deg,
+        #F080F0,
+        #FFB86C,
+        #C8CE72,
+        #78D7E8
+        );
+    font-size: 100px;
+    font-family: "Modak", cursive;
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #D653A9;
+}
+
+.passCard {
+    background-color: #FAF26F;
+    border-radius: 25px;
+    min-height: 170px;
+    margin: 30px auto;
+    padding: 20px 75px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /*makes transistion smoother*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.passCard:hover {
+    transform: translateY(-5px); /* Changes pos of boxes */
+    }
+
+.passName {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.passName small {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f32670;
+}
+
+.passName strong {
+    display: block;
+    font-size: 38px;
+    color: #3A1E66;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 24px solid;
+}
+
+.pink {
+    border-left-color: #f32670;
+}
+
+.blue {
+    border-left-color: #1761a9;
+}
+
+.comingSoon {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #3A1E66;
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END OF TICKETS SECTION */
+
+
+
+
+
+
+
+
+
 
 
 
