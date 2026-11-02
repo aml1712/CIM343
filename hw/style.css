@@ -435,6 +435,49 @@
     width: 100%;
     }
 
+    /* NAVIGATION BUTTONS */
+    .button-controls {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .button-controls button {
+        background-color: #006B73;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 22px;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .button-controls button:hover {
+        background-color: #38B6FF;
+        transform: translateY(-2px);
+    }
+
+
+    .review-card.hidden {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* END OF CUSTOMER REVIEWS SECTION */
 
 

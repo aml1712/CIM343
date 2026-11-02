@@ -243,6 +243,17 @@
                 <h2>What Our Customers Have To Say</h2>
             </div>
 
+
+            <!--navigation buttons-->
+            <div class="button-controls">
+                <button id="prevReview" onclick="changeReviews(-1)">
+                    &#8592; Previous
+                </button>
+                <button id="nextReview" onclick="changeReviews(1)">
+                    Next &#8594;
+                </button>
+            </div>
+
             <div class="reviews-grid">
 
             <!-- review 1 -->
@@ -282,10 +293,98 @@
                  <strong>Lily W.</strong>
              </div>
              </div>
+
+             <!-- review 4 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> My new favorite beach shop! Everything is so cute,
+                and the smoothies are delicious. Such a fun atmosphere!
+                 </p>
+
+                 <div class="review-bottom">
+                 <strong>Sofia C.</strong>
+             </div>
+             </div>
+
+              <!-- review 5 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> The perfect place to grab a refreshing drink after a day
+                in the sun. I love all the beach accessories!!
+                 </p>
+
+                 <div class="review-bottom">
+                 <strong>Justin H.</strong>
+             </div>
+             </div>
+
+              <!-- review 6 -->
+             <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                 <p> Such a hidden gem! The staff is incredibly welcoming,
+                and the whole shop has the cutest coastal aesthetic.
+                 </p>
+
+                 <div class="review-bottom">
+                 <strong>Albert O.</strong>
+             </div>
+             </div>
+
+
+
+
+
+
             </div>
 
         </section>
          <!--END OF CUSTOMER REVIEWS-->
+
+
+         <!-- BUTTUN JAVA -->
+          <script>
+
+            let currentPage = 0;
+
+            const reviewsPerPage = 3;
+
+            const reviews = document.querySelectorAll(".review-card");
+
+            const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+
+            function showReviews() {
+
+            reviews.forEach((review, index) => {
+
+                if (
+                    index >= currentPage * reviewsPerPage &&
+                    index < (currentPage + 1) * reviewsPerPage
+                ) {
+                    review.classList.remove("hidden");
+                } else {
+                    review.classList.add("hidden");
+                }
+
+            });
+
+        
+            document.getElementById("prevReview").disabled = currentPage === 0;
+
+            document.getElementById("nextReview").disabled = currentPage === totalPages - 1;
+            }
+
+            function changeReviews(direction) {
+
+            currentPage += direction;
+
+            showReviews();
+
+            }
+
+    
+        showReviews();
+
+        </script>
 
     </body>
 
