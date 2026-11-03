@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univeristy of Miami Trivia</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.24.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.24.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.24.2/dist/js/uikit-icons.min.js"></script>
+
+    <style>
+        main {
+            background-color: #F47423;
+            padding: 30px;
+        }
+        nav{
+            background-color: #035131;
+        }
+
+        .uk-accordian-title {
+            color: white;
+        }
+
+        .uk-card-title {
+            background-color: #F47423;
+        }
+
+       
+    body {
+        color: white;
+    }
+
+
+    h1, h2, h3 {
+        color: #F47321;
+    }
+
+
+    .uk-accordion-title {
+        color: #035131;
+    }
+
+
+    .uk-accordion-content {
+            color: white;
+}
+
+
+    .uk-subnav a {
+        color: #005030;
+    }
+
+
+    </style>
+
+</head>
+
+<!-- END OF HEAD -->
+
+
+
+
+
+<body>
+
+    <header class="uk-container">
+
+        <!-- NAVIGATION MENU -->
+        <nav class="uk-container uk-container-small" uk-dropnav >
+            <ul class="uk-subnav">
+                <li class="uk-active"><a href="#">Home</a></li>
+                <li>
+                    <a href>Trivia <span uk-drop-parent-icon></span></a>
+                    <div class="uk-dropdown">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="#questions">Questions</a></li>
+                            <li><a href="#funfacts">Fun Facts</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="aboutum">About UM</a>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <main class="uk-container">
+
+        <!-- https://getuikit.com/docs/container -->
+        <div class="uk-container uk-container-xsmall">
+            <!-- https://getuikit.com/docs/accordion -->
+            <ul uk-accordion>
+
+                <li class="uk-open">
+
+                    <!--MY CODE FOR QUIZ-->
+
+                    <a class="uk-accordion-title" href>Question 1: When was the University of Miami founded?</a>
+                    <div class="uk-accordion-content">
+                        <p>The University of Miami was founded in <strong>1925!</strong> It was envisioned as both
+                            a beacon of higher education and a cornerstone of Coral Gables by founder George Merrick!
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="uk-accordion-title" href>Qustion 2: What is the Univeristy of Miami's mascot?</a>
+                    <div class="uk-accordion-content">
+                        <p>The Icon, The Myth, The Legend: <strong>SEBASTIAN THE IBIS!</strong> Folklore maintains that 
+                            the Ibis, a symbol of knowledge found in the Everglades & Egypt, is the last sign of 
+                            wildlife to take shelter before a hurricane and the first to reappear after the storm!
+                            </p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a class="uk-accordion-title" href>Question 3: What are the Univeristy of Miami's school colors?</a>
+                    <div class="uk-accordion-content">
+                        <p>The official University of Miami colors are <strong>ORANGE</strong> and <strong>GREEN</strong>!
+                            The two colors represent the Florida orange tree;  Orange symbolizes the fruit of the tree, 
+                            green represents the leaves and white, the blossoms.
+                            </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+
+
+
+        <!-- https://getuikit.com/docs/card -->
+        <div class="uk-card uk-card-overlay uk-card-body uk-width-1-2@m">
+            <h3 class="uk-card-title">Did you know?</h3>
+            <p> In February 2018, Drake visited the University of Miami campus to
+                film portions of his music video for "God's Plan" and surprise students with a massive giveaway! The event
+                & filming took place around the Shalala Student Center!
+                </p>
+        </div>
+
+        <hr>
+        <!-- https://getuikit.com/docs/lightbox -->
+        <div uk-lightbox="animation: fade">
+            <a class="uk-button uk-button-default" href="drakeUM.jpg" data-alt="narhwal" data-caption="Drake at UM">UM Hosts Drake</a>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
